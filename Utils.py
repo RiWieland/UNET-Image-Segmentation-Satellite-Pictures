@@ -29,6 +29,7 @@ def get_dir_dict():
 
     dict_dir = {'Train':
                 {
+                    'Ann_Path': os.getcwd() + "/Data/raw/Annotations/Train/",
                     'Ann_Small': os.getcwd() + "/Data/raw/Annotations/Train/annotation.json",
                     'Image_Path': os.getcwd() + "/Data/raw/Image/Train/Images/",
                     'Mask_Path': os.getcwd() + "/Data/Mask/Train/"
@@ -36,17 +37,42 @@ def get_dir_dict():
                 },
             'Val':
                 {
+                    'Ann_Path': os.getcwd() + "/Data/raw/Annotations/Val/",
                     'Ann_Small': os.getcwd() + "/Data/raw/Annotations/Val/annotation.json",
                     'Image_Path': os.getcwd() + "/Data/raw/Image/Val/Images/",
                     'Mask_Path': os.getcwd() + "/Data/Mask/Val/"
                 },
 
-            'Test': os.getcwd() + "/raw/Image/Test/",
-            'Log': os.getcwd() + "/Log/",
-            'Saved_Models': os.getcwd() + "/Saved_Models/",
-            'Predictions': os.getcwd() + '/Data/Predictions/'
+            'Test':
+                {
+                    'Test_Path': os.getcwd() + "/Data/raw/Image/Test/"
+                },
+            'Log':
+                {
+                    'Log_path': os.getcwd() + "/Log/"
+                },
+            'Saved_Models':
+                {
+                    'Save_Path': os.getcwd() + "/Saved_Models/"
+                },
+            'Predictions':
+                {
+                    'Predicitons_Path': os.getcwd() + '/Data/Predictions/'
+                }
             }
     return dict_dir
+
+
+def create_dir_dict(dir_dict):
+
+    for key, value in dir_dict.items():
+        for path in dir_dict[key].values():
+            try:
+                if not os.path.exists(path):
+                    os.makedirs(path)
+                    print("Directory ", path, " created!")
+            except:
+                continue
 
 
 def id_generator(size=6, chars=string.digits):

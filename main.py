@@ -10,7 +10,7 @@ from keras.callbacks import EarlyStopping, ModelCheckpoint, ReduceLROnPlateau
 from keras.models import load_model
 from keras.optimizers import Adam, Adamax
 
-from Utils import get_dir_dict
+from Utils import get_dir_dict, create_dir_dict
 from Dataprocessing import create_dataset, generator, create_mask
 from Plots import create_plots_test
 from Model import model
@@ -25,18 +25,20 @@ if __name__ == '__main__':
 
     parser = argparse.ArgumentParser()
     parser.add_argument("-M", dest='Mode', type=str ,help="Create Masks for both Training and Validation Set - Mask **or** Train Model and make Predictions -Run",
-                        choices=['Mask', 'Run'], required=True)
+                        choices=['Init_Dir', 'Mask', 'Run'], required=True)
 
     parser.add_argument("--Num", type=int, default=1000, help="Number of Masks created for both Training and Validation Set")
 
     args = parser.parse_args()
 
+    if args.Mode == 'Init_Dir':
+
+        create_dir_dict(dict_dir)
+
     if args.Mode == 'Mask':
 
-        Num_Mask = args.Num
-
-        create_mask('Train', Num_Mask, dict_dir)
-        create_mask('Val', Num_Mask, dict_dir)
+        create_mask('Train', args.Num, dict_dir)
+        create_mask('Val', args.Num, dict_dir)
 
     if args.Mode == 'Run':
 
