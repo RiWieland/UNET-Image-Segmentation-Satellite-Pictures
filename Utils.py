@@ -63,7 +63,7 @@ def get_dir_dict():
     return dict_dir
 
 
-def create_dir_dict(dir_dict):
+def create_dir(dir_dict):
 
     for key, value in dir_dict.items():
         for path in dir_dict[key].values():

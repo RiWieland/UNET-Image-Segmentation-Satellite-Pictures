@@ -10,7 +10,7 @@ from keras.callbacks import EarlyStopping, ModelCheckpoint, ReduceLROnPlateau
 from keras.models import load_model
 from keras.optimizers import Adam, Adamax
 
-from Utils import get_dir_dict, create_dir_dict
+from Utils import get_dir_dict, create_dir
 from Dataprocessing import create_dataset, generator, create_mask
 from Plots import create_plots_test
 from Model import model
@@ -33,7 +33,7 @@ if __name__ == '__main__':
 
     if args.Mode == 'Init_Dir':
 
-        create_dir_dict(dict_dir)
+        create_dir(dict_dir)
 
     if args.Mode == 'Mask':
 
