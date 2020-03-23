@@ -18,7 +18,8 @@ Done with anaconda environment, see Environment for details.
 
 ## Data:
 
-Model was trained and evaluated with crowed ai mapping challenge. Moderate data augmentation was used, see dataprocessing.
+Model was trained and evaluated with data from the crowed ai mapping challenge. Moderate data augmentation was used: horizontal and vertical flips.
+Data Augmentation was added the in the generator and randomly executed, see dataprocessing.
 
 ## Model:
 
