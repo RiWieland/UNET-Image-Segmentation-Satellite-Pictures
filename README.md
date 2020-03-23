@@ -26,6 +26,7 @@ Data Augmentation was added the in the generator and randomly executed, see data
 Unet model (Decoder - Encoder Network) with Adamax optimizer, loss is calculated by binary crossentropy.
 
 ![Example2](Example_Plots/u-net-architecture.jpg)
+
 (Unet picture from the original paper. Unet in the present paper differs)
 
 ## Get Started:
