@@ -8,7 +8,7 @@ Unet to predict roof tops on satellite pictures. Training the model was done wit
 Mask created with MS Coco annotations. Project includes automatic Mask creation for Train and validation set, Unet model with optimizer, data processing including a Generator function and a function for creating plots. Pretrained weights are also included from which the following plots were created.
 
 ![Example1](https://github.com/RichardWie1and/UNET-Image-Segmentation-Satellite-Pictures/blob/master/Example_Plots/Test_Predict_13.jpg)
-![Example1](Example_Plots/Test_Predict_9.jpg)
+![Example2](Example_Plots/Test_Predict_9.jpg)
 
 (see also Example_Plots)
 
@@ -24,6 +24,9 @@ Data Augmentation was added the in the generator and randomly executed, see data
 ## Model:
 
 Unet model (Decoder - Encoder Network) with Adamax optimizer, loss is calculated by binary crossentropy.
+
+![Example2](Example_Plots/u-net-architecture.png)
+
 
 ## Get Started:
 
