@@ -27,7 +27,7 @@ Unet model (Decoder - Encoder Network) with Adamax optimizer, loss is calculated
 
 ![Example2](Example_Plots/u-net-architecture.jpg)
 
-(Unet picture from the original paper. Unet in the present paper differs)
+(Unet picture from the original paper. Unet in the present projects differs)
 
 ## Get Started:
 
