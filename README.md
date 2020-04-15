@@ -21,6 +21,8 @@ Done with anaconda environment, see Environment for details.
 Model was trained and evaluated with data from the crowed ai mapping challenge. Moderate data augmentation was used: horizontal and vertical flips.
 Data Augmentation was added the in the generator and randomly executed, see dataprocessing.
 
+![Data_Workflow](Data_Workflow.tiff)
+
 ## Model:
 
 Unet model (Decoder - Encoder Network) with Adamax optimizer, loss is calculated by binary crossentropy.
