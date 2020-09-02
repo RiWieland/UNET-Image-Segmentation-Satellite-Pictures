@@ -35,10 +35,10 @@ U-Net consists out of 2 seperate networks, one decoder and one encoder.
 ![Example3](Description/Desc1.jpg)
 
 The backbone of both are convolutional layers, but the technics differ. While the decoder extracts features with its kernels...
-![Example3](Description/Desc1.jpg)
+![Example3](Description/Desc2.jpg)
 
 ...the Encoder generalize from these features to create the feature mask.
-![Example3](Description/Desc1.jpg)
+![Example3](Description/Desc3.jpg)
 
 
 ## Get Started:
