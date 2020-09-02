@@ -31,6 +31,16 @@ Unet model (Decoder - Encoder Network) with Adamax optimizer, loss is calculated
 
 (Unet picture from the original paper. Unet in the present projects differs)
 
+U-Net consists out of 2 seperate networks, one decoder and one encoder. 
+![Example3](Description/Desc1.jpg)
+
+The backbone of both are convolutional layers, but the technics differ. While the decoder extracts features with its kernels...
+![Example3](Description/Desc1.jpg)
+
+...the Encoder generalize from these features to create the feature mask.
+![Example3](Description/Desc1.jpg)
+
+
 ## Get Started:
 
 Good start includes:
