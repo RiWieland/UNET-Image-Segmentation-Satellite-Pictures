@@ -7,7 +7,7 @@ Predict housing rooftops on satellite pictures
 Unet to predict roof tops on satellite pictures. Training the model was done with 10000 satellite pictures from the Crowed AI Mapping Challenge.
 Mask created with MS Coco annotations. Project includes automatic Mask creation for Train and validation set, Unet model with optimizer, data processing including a Generator function and a function for creating plots. Pretrained weights are also included from which the following plots were created.
 
-![Example1](https://github.com/RichardWie1and/UNET-Image-Segmentation-Satellite-Pictures/blob/master/Example_Plots/Test_Predict_13.jpg)
+![Example1](https://github.com/RichardWie1and/UNET-Image-Segmentation-Satellite-Pictures/blob/master/Example_Plots/Test_Predict_8.jpg)
 ![Example2](Example_Plots/Test_Predict_9.jpg)
 
 (see also Example_Plots)
