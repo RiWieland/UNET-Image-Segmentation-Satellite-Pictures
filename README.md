@@ -14,7 +14,7 @@ Mask created with MS Coco annotations. Project includes automatic Mask creation 
 
 ## Prerequisites:
 
-Done with anaconda environment, see Environment for details.
+Done with anaconda environment, see environment.yml for details.
 
 ## Data:
 
